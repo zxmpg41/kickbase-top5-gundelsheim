@@ -50,15 +50,7 @@ export const PlayerTable = ({ userId }) => {
       <TableBody>
         {data.length > 0 &&
           data.map((player, i) => (
-            <TableRow
-              key={i}
-              className={[
-                i < 3 &&
-                  'bg-rose-100 hover:bg-rose-200 dark:bg-rose-500 dark:hover:bg-rose-400',
-                i === 3 &&
-                  'bg-orange-100 hover:bg-orange-200 dark:bg-orange-500 dark:hover:bg-orange-400',
-              ]}
-            >
+            <TableRow key={i}>
               <TableCell>{i + 1}</TableCell>
               <TableCell>
                 <div
